@@ -46,6 +46,14 @@ data/
                                they are shipped explicitly so external cohorts are
                                scaled to the training distribution rather than
                                per-record z-scored.
+  train_balanced_idx.npy       the fixed internal split, as int64 record indices into
+  train_imbalanced_idx.npy     the 27,144-record analytic cohort:
+  val_idx.npy                    train 19,000 · val 2,715 · test 5,429
+  test_idx.npy                   (mutually disjoint; union = 0…27,143 exactly)
+                               `train_imbalanced_idx` (n=4,384) is the majority-skewed
+                               primary training set, a strict subset of
+                               `train_balanced_idx`. These four arrays are what the
+                               paper means by "verified bit-exact on every run".
 
 results/
   snuh_probs.npz               per-record predicted probability for all 50 000 SNUH
