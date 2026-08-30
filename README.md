@@ -31,6 +31,14 @@ new contributions of this paper.
 
 ```
 code/
+  train_bbb_leadcount.py       the script that trained the six checkpoints, run once
+                               per (mode, lead_set) pair: mode ∈ {vanilla, debiased},
+                               lead_set ∈ {1lead, 3lead, 12lead}
+  resnet1d.py                  1-D ResNet-34 backbone with the two-unit head the
+                               checkpoints carry, plus LEAD_SETS and RACE_WEIGHTS
+  cohort_builder.py            MIMIC-IV-ECG race-labelled BBB cohort construction
+  preprocess.py                waveform preprocessing
+  evaluate.py                  internal (MIMIC test split) evaluation
   run_external_validation.py   external validation pipeline (EchoNext + SNUH)
   fastmetrics.py               rank-based AUROC, Youden threshold, bootstrap CIs
   delong.py                    DeLong variance; independent-samples AUROC test
