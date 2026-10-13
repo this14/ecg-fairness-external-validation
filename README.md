@@ -2,9 +2,9 @@
 
 Code and derived results for:
 
-> **Internal Fairness Gains Do Not Survive External Validation: Race Loss-Reweighting
-> for Bundle Branch Block Detection Across Two Independent ECG Cohorts**
-> Chuelwon Lee. *Submitted to JAMIA (Research and Applications), 2026.*
+> **Race Loss-Reweighting Raises Sensitivity Without Narrowing Disparity, and Fails
+> on External Validation: Bundle Branch Block Detection Across Two Independent ECG Cohorts**
+> Chuelwon Lee. *Manuscript under review, 2026.*
 
 The study trains six 1-D ResNet-34 bundle branch block (BBB) detectors on
 MIMIC-IV-ECG — three lead configurations (12-lead, 3-lead, 1-lead) × two training
