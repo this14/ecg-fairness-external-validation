@@ -1,0 +1,141 @@
+## table1_overall
+cohort,config,threshold,metric,std_mean,std_sd,rw_mean,rw_sd,delta_mean,delta_sd,n_neg,n,sign_p,wilcoxon_p
+EchoNext-QRS,12-lead,overall_at_0.5,auroc,0.9357,0.0306,0.9264,0.0142,-0.0092,0.0272,8,10,0.1094,0.1309
+EchoNext-QRS,12-lead,overall_at_0.5,sens,0.6376,0.0649,0.5958,0.101,-0.0418,0.0912,7,10,0.3438,0.2754
+EchoNext-QRS,12-lead,overall_at_0.5,spec,0.9759,0.0069,0.9702,0.0096,-0.0057,0.0104,7,10,0.3438,0.1699
+EchoNext-QRS,12-lead,overall_at_youden,sens,0.8617,0.0611,0.8698,0.0289,0.0081,0.0543,7,10,0.3438,0.6953
+EchoNext-QRS,12-lead,overall_at_youden,spec,0.9067,0.0212,0.8835,0.0295,-0.0231,0.0218,9,10,0.0215,0.0137
+EchoNext-QRS,3-lead,overall_at_0.5,auroc,0.9567,0.0179,0.9313,0.0266,-0.0255,0.0353,9,10,0.0215,0.0488
+EchoNext-QRS,3-lead,overall_at_0.5,sens,0.6866,0.0898,0.5836,0.1516,-0.103,0.1985,8,10,0.1094,0.084
+EchoNext-QRS,3-lead,overall_at_0.5,spec,0.9773,0.0067,0.9659,0.0214,-0.0114,0.0253,6,10,0.7539,0.2324
+EchoNext-QRS,3-lead,overall_at_youden,sens,0.8889,0.0433,0.8772,0.037,-0.0116,0.057,8,10,0.1094,0.1602
+EchoNext-QRS,3-lead,overall_at_youden,spec,0.9168,0.0122,0.879,0.0527,-0.0378,0.0606,6,10,0.7539,0.1602
+EchoNext-QRS,1-lead,overall_at_0.5,auroc,0.9188,0.029,0.8266,0.0796,-0.0922,0.0919,8,10,0.1094,0.0098
+EchoNext-QRS,1-lead,overall_at_0.5,sens,0.5529,0.0895,0.4034,0.1379,-0.1496,0.2017,9,10,0.0215,0.0039
+EchoNext-QRS,1-lead,overall_at_0.5,spec,0.9783,0.011,0.9434,0.0304,-0.0349,0.0301,9,10,0.0215,0.0059
+EchoNext-QRS,1-lead,overall_at_youden,sens,0.8411,0.0458,0.7735,0.0899,-0.0675,0.1136,8,10,0.1094,0.0645
+EchoNext-QRS,1-lead,overall_at_youden,spec,0.8697,0.0352,0.7658,0.0548,-0.1038,0.0604,10,10,0.002,0.002
+EchoNext-LVEF,12-lead,overall_at_0.5,auroc,0.6401,0.0433,0.6417,0.0317,0.0016,0.0379,5,10,1.0,1.0
+EchoNext-LVEF,12-lead,overall_at_0.5,sens,0.1837,0.0339,0.1963,0.0424,0.0126,0.044,3,10,0.3438,0.2324
+EchoNext-LVEF,12-lead,overall_at_0.5,spec,0.9202,0.0078,0.9232,0.0166,0.0031,0.0153,4,10,0.7539,0.4316
+EchoNext-LVEF,12-lead,overall_at_youden,sens,0.5231,0.1232,0.5525,0.086,0.0294,0.1055,4,10,0.7539,0.4922
+EchoNext-LVEF,12-lead,overall_at_youden,spec,0.7247,0.0787,0.7101,0.0596,-0.0146,0.0723,8,10,0.1094,0.2754
+EchoNext-LVEF,3-lead,overall_at_0.5,auroc,0.6758,0.0208,0.6614,0.027,-0.0144,0.0328,8,10,0.1094,0.2324
+EchoNext-LVEF,3-lead,overall_at_0.5,sens,0.1923,0.0352,0.1999,0.0628,0.0076,0.0801,6,10,0.7539,1.0
+EchoNext-LVEF,3-lead,overall_at_0.5,spec,0.9163,0.0105,0.9212,0.0262,0.0049,0.0316,4,10,0.7539,0.7695
+EchoNext-LVEF,3-lead,overall_at_youden,sens,0.6074,0.0466,0.558,0.0592,-0.0494,0.0707,8,10,0.1094,0.084
+EchoNext-LVEF,3-lead,overall_at_youden,spec,0.6883,0.0405,0.7268,0.0498,0.0385,0.0508,3,10,0.3438,0.084
+EchoNext-LVEF,1-lead,overall_at_0.5,auroc,0.6756,0.0277,0.638,0.0393,-0.0376,0.0476,9,10,0.0215,0.0137
+EchoNext-LVEF,1-lead,overall_at_0.5,sens,0.1791,0.0412,0.1963,0.0594,0.0172,0.0805,1,10,0.0215,0.084
+EchoNext-LVEF,1-lead,overall_at_0.5,spec,0.9344,0.0136,0.9233,0.0273,-0.0111,0.0302,7,10,0.3438,0.3105
+EchoNext-LVEF,1-lead,overall_at_youden,sens,0.6426,0.063,0.5727,0.0793,-0.0699,0.1025,7,10,0.3438,0.0488
+EchoNext-LVEF,1-lead,overall_at_youden,spec,0.631,0.0837,0.6505,0.1024,0.0195,0.135,4,10,0.7539,0.6953
+SNUH-BBB,12-lead,overall_at_0.5,auroc,0.9022,0.02,0.8886,0.0126,-0.0136,0.0203,7,10,0.3438,0.0488
+SNUH-BBB,12-lead,overall_at_0.5,sens,0.718,0.0641,0.6,0.1426,-0.118,0.1517,7,10,0.3438,0.0488
+SNUH-BBB,12-lead,overall_at_0.5,spec,0.8933,0.023,0.8985,0.0294,0.0051,0.0348,5,10,1.0,0.8457
+SNUH-BBB,12-lead,overall_at_youden,sens,0.8943,0.0301,0.8973,0.0148,0.0031,0.032,6,10,0.7539,0.6953
+SNUH-BBB,12-lead,overall_at_youden,spec,0.8138,0.0333,0.7795,0.0277,-0.0343,0.0364,8,10,0.1094,0.0195
+SNUH-BBB,3-lead,overall_at_0.5,auroc,0.8882,0.019,0.8446,0.0223,-0.0436,0.0313,9,10,0.0215,0.0059
+SNUH-BBB,3-lead,overall_at_0.5,sens,0.7501,0.0831,0.5376,0.132,-0.2125,0.15,10,10,0.002,0.002
+SNUH-BBB,3-lead,overall_at_0.5,spec,0.8652,0.0244,0.8805,0.0354,0.0154,0.0376,3,10,0.3438,0.1934
+SNUH-BBB,3-lead,overall_at_youden,sens,0.8795,0.0347,0.8642,0.0298,-0.0153,0.0557,7,10,0.3438,0.2754
+SNUH-BBB,3-lead,overall_at_youden,spec,0.791,0.0298,0.734,0.0516,-0.057,0.0528,8,10,0.1094,0.0098
+SNUH-BBB,1-lead,overall_at_0.5,auroc,0.8163,0.0475,0.6876,0.0713,-0.1286,0.0876,9,10,0.0215,0.0039
+SNUH-BBB,1-lead,overall_at_0.5,sens,0.4603,0.126,0.2118,0.0703,-0.2484,0.1582,10,10,0.002,0.002
+SNUH-BBB,1-lead,overall_at_0.5,spec,0.9049,0.0424,0.8895,0.0515,-0.0154,0.0776,7,10,0.3438,0.4922
+SNUH-BBB,1-lead,overall_at_youden,sens,0.7573,0.0598,0.7009,0.0674,-0.0564,0.1209,7,10,0.3438,0.2324
+SNUH-BBB,1-lead,overall_at_youden,spec,0.7475,0.0688,0.6073,0.0605,-0.1402,0.0814,9,10,0.0215,0.0039
+## table2_gaps
+cohort,pair,config,metric,gapStd_mean,gapStd_sd,gapRW_mean,gapRW_sd,dabsgap_mean,dabsgap_sd,narrowed,n,sign_p,wilcoxon_p
+EchoNext-QRS,race_ethnicity=black - race_ethnicity=white,12-lead,auroc,-0.0259,0.021,-0.0306,0.0125,0.0046,0.0225,4,10,0.7539,0.4922
+EchoNext-QRS,race_ethnicity=black - race_ethnicity=white,12-lead,sens,0.0265,0.0569,0.0148,0.0625,0.0013,0.0423,5,10,1.0,1.0
+EchoNext-QRS,race_ethnicity=black - race_ethnicity=white,12-lead,spec,-0.0028,0.0107,-0.0077,0.0129,0.0055,0.0066,3,10,0.3438,0.0371
+EchoNext-QRS,race_ethnicity=black - race_ethnicity=white,3-lead,auroc,-0.0233,0.0179,-0.0337,0.0184,0.0104,0.02,3,10,0.3438,0.1602
+EchoNext-QRS,race_ethnicity=black - race_ethnicity=white,3-lead,sens,-0.0797,0.0412,-0.056,0.0564,-0.0184,0.0864,7,10,0.3438,0.4316
+EchoNext-QRS,race_ethnicity=black - race_ethnicity=white,3-lead,spec,-0.0029,0.0037,-0.0027,0.0058,0.0011,0.0039,5,10,1.0,0.7344
+EchoNext-QRS,race_ethnicity=black - race_ethnicity=white,1-lead,auroc,-0.0019,0.0239,0.0093,0.0434,0.0203,0.0278,2,10,0.1094,0.0273
+EchoNext-QRS,race_ethnicity=black - race_ethnicity=white,1-lead,sens,-0.0125,0.0738,0.0614,0.0466,0.0024,0.0679,5,10,1.0,0.9219
+EchoNext-QRS,race_ethnicity=black - race_ethnicity=white,1-lead,spec,-0.0,0.0048,-0.0109,0.0247,0.0152,0.0178,1,10,0.0215,0.0039
+EchoNext-QRS,sex=female - sex=male,12-lead,auroc,0.0216,0.0107,0.025,0.0095,0.0033,0.0066,3,10,0.3438,0.1602
+EchoNext-QRS,sex=female - sex=male,12-lead,sens,0.0244,0.0343,0.0037,0.036,-0.0062,0.021,7,10,0.3438,0.3223
+EchoNext-QRS,sex=female - sex=male,12-lead,spec,0.0096,0.0047,0.0095,0.004,-0.0002,0.0058,4,10,0.7539,0.8457
+EchoNext-QRS,sex=female - sex=male,3-lead,auroc,0.0266,0.0044,0.0343,0.008,0.0077,0.0096,3,10,0.3438,0.0488
+EchoNext-QRS,sex=female - sex=male,3-lead,sens,0.0787,0.0263,0.0661,0.0438,-0.0125,0.0427,6,10,0.7539,0.4316
+EchoNext-QRS,sex=female - sex=male,3-lead,spec,0.0039,0.003,0.0057,0.0074,0.0022,0.0079,6,10,0.7539,0.7695
+EchoNext-QRS,sex=female - sex=male,1-lead,auroc,0.0317,0.0165,0.0323,0.0141,0.0005,0.0164,4,10,0.7539,1.0
+EchoNext-QRS,sex=female - sex=male,1-lead,sens,0.0541,0.025,0.0218,0.0428,-0.0171,0.0463,6,10,0.7539,0.3223
+EchoNext-QRS,sex=female - sex=male,1-lead,spec,0.0078,0.0054,0.0116,0.0086,0.0042,0.0094,2,10,0.1094,0.1309
+EchoNext-QRS,age_at_ecg=>65 - age_at_ecg=<50,12-lead,auroc,0.0319,0.021,0.062,0.0178,0.0301,0.033,2,10,0.1094,0.0195
+EchoNext-QRS,age_at_ecg=>65 - age_at_ecg=<50,12-lead,sens,0.0684,0.0669,0.0959,0.0672,0.0284,0.0775,4,10,0.7539,0.375
+EchoNext-QRS,age_at_ecg=>65 - age_at_ecg=<50,12-lead,spec,-0.0075,0.0046,-0.0036,0.0073,-0.0009,0.006,7,10,0.3438,0.4922
+EchoNext-QRS,age_at_ecg=>65 - age_at_ecg=<50,3-lead,auroc,0.0285,0.0199,0.0603,0.0354,0.0318,0.0176,0,10,0.002,0.002
+EchoNext-QRS,age_at_ecg=>65 - age_at_ecg=<50,3-lead,sens,0.1192,0.0469,0.1227,0.0815,0.009,0.0874,5,10,1.0,0.8457
+EchoNext-QRS,age_at_ecg=>65 - age_at_ecg=<50,3-lead,spec,-0.0181,0.0049,-0.0201,0.0109,0.002,0.0135,6,10,0.7539,0.8457
+EchoNext-QRS,age_at_ecg=>65 - age_at_ecg=<50,1-lead,auroc,0.0231,0.0144,0.0489,0.0265,0.0258,0.0292,3,10,0.3438,0.0371
+EchoNext-QRS,age_at_ecg=>65 - age_at_ecg=<50,1-lead,sens,0.1383,0.0435,0.1028,0.0933,-0.0272,0.0857,7,10,0.3438,0.3223
+EchoNext-QRS,age_at_ecg=>65 - age_at_ecg=<50,1-lead,spec,-0.0141,0.009,0.0058,0.0351,0.0149,0.0211,3,10,0.3438,0.084
+EchoNext-LVEF,race_ethnicity=black - race_ethnicity=white,12-lead,auroc,-0.0073,0.0149,-0.0041,0.0261,0.005,0.0213,6,10,0.7539,0.9219
+EchoNext-LVEF,race_ethnicity=black - race_ethnicity=white,12-lead,sens,-0.0013,0.0275,-0.0099,0.0372,0.0099,0.0312,4,10,0.7539,0.4316
+EchoNext-LVEF,race_ethnicity=black - race_ethnicity=white,12-lead,spec,0.0419,0.0122,0.0327,0.0182,-0.0092,0.021,7,10,0.3438,0.1602
+EchoNext-LVEF,race_ethnicity=black - race_ethnicity=white,3-lead,auroc,0.0079,0.0287,-0.0026,0.0273,-0.0006,0.0178,6,10,0.7539,0.8457
+EchoNext-LVEF,race_ethnicity=black - race_ethnicity=white,3-lead,sens,-0.0316,0.0146,-0.034,0.0274,0.0029,0.0354,4,10,0.7539,0.7695
+EchoNext-LVEF,race_ethnicity=black - race_ethnicity=white,3-lead,spec,0.0551,0.0081,0.0419,0.0158,-0.0132,0.0202,9,10,0.0215,0.0488
+EchoNext-LVEF,race_ethnicity=black - race_ethnicity=white,1-lead,auroc,0.0163,0.0145,-0.0239,0.0181,0.0058,0.0271,4,10,0.7539,0.7695
+EchoNext-LVEF,race_ethnicity=black - race_ethnicity=white,1-lead,sens,-0.0182,0.0164,-0.0022,0.0567,0.0235,0.041,3,10,0.3438,0.1055
+EchoNext-LVEF,race_ethnicity=black - race_ethnicity=white,1-lead,spec,0.0415,0.0118,0.0083,0.0268,-0.0184,0.0208,7,10,0.3438,0.0273
+EchoNext-LVEF,sex=female - sex=male,12-lead,auroc,0.0176,0.0128,0.0192,0.0123,0.0032,0.0191,4,10,0.7539,0.625
+EchoNext-LVEF,sex=female - sex=male,12-lead,sens,-0.0132,0.015,-0.011,0.0176,0.0003,0.0124,5,10,1.0,1.0
+EchoNext-LVEF,sex=female - sex=male,12-lead,spec,0.0412,0.0036,0.0385,0.0053,-0.0027,0.0051,7,10,0.3438,0.1055
+EchoNext-LVEF,sex=female - sex=male,3-lead,auroc,0.0238,0.0076,0.029,0.0155,0.0052,0.0185,4,10,0.7539,0.4316
+EchoNext-LVEF,sex=female - sex=male,3-lead,sens,0.0059,0.0111,0.0027,0.0171,0.003,0.0155,4,10,0.7539,0.6953
+EchoNext-LVEF,sex=female - sex=male,3-lead,spec,0.035,0.0072,0.027,0.0138,-0.008,0.0157,7,10,0.3438,0.1309
+EchoNext-LVEF,sex=female - sex=male,1-lead,auroc,0.0353,0.0116,0.0396,0.0192,0.0044,0.0208,4,10,0.7539,0.7695
+EchoNext-LVEF,sex=female - sex=male,1-lead,sens,-0.0108,0.0138,-0.007,0.0147,-0.0004,0.012,4,10,0.7539,0.9219
+EchoNext-LVEF,sex=female - sex=male,1-lead,spec,0.0275,0.0071,0.0211,0.0131,-0.0052,0.0136,6,10,0.7539,0.4922
+EchoNext-LVEF,age_at_ecg=>65 - age_at_ecg=<50,12-lead,auroc,0.0066,0.0268,0.0366,0.022,0.0158,0.0229,1,10,0.0215,0.0273
+EchoNext-LVEF,age_at_ecg=>65 - age_at_ecg=<50,12-lead,sens,0.1105,0.0307,0.1088,0.025,-0.0017,0.0287,4,10,0.7539,0.625
+EchoNext-LVEF,age_at_ecg=>65 - age_at_ecg=<50,12-lead,spec,-0.0759,0.0115,-0.0648,0.0151,-0.0111,0.012,8,10,0.1094,0.0273
+EchoNext-LVEF,age_at_ecg=>65 - age_at_ecg=<50,3-lead,auroc,0.0141,0.0252,0.0483,0.0321,0.0312,0.0265,1,10,0.0215,0.0039
+EchoNext-LVEF,age_at_ecg=>65 - age_at_ecg=<50,3-lead,sens,0.1336,0.0438,0.1372,0.0546,0.0036,0.0743,6,10,0.7539,0.8457
+EchoNext-LVEF,age_at_ecg=>65 - age_at_ecg=<50,3-lead,spec,-0.0935,0.0093,-0.0767,0.026,-0.0168,0.0305,8,10,0.1094,0.1055
+EchoNext-LVEF,age_at_ecg=>65 - age_at_ecg=<50,1-lead,auroc,-0.0014,0.0392,0.0545,0.0278,0.0202,0.0287,3,10,0.3438,0.084
+EchoNext-LVEF,age_at_ecg=>65 - age_at_ecg=<50,1-lead,sens,0.1411,0.028,0.1146,0.0604,-0.026,0.0743,6,10,0.7539,0.375
+EchoNext-LVEF,age_at_ecg=>65 - age_at_ecg=<50,1-lead,spec,-0.0701,0.0173,-0.0216,0.0499,-0.0235,0.028,8,10,0.1094,0.0371
+SNUH-BBB,sex=F - sex=M,12-lead,auroc,-0.0042,0.0077,-0.0083,0.007,0.0017,0.0082,6,10,0.7539,1.0
+SNUH-BBB,sex=F - sex=M,12-lead,sens,-0.0197,0.0236,-0.0135,0.024,-0.0039,0.0289,6,10,0.7539,0.625
+SNUH-BBB,sex=F - sex=M,12-lead,spec,0.0007,0.0075,-0.0041,0.0046,0.0004,0.0057,4,10,0.7539,0.7695
+SNUH-BBB,sex=F - sex=M,3-lead,auroc,-0.0003,0.0083,-0.0001,0.0112,0.0012,0.0092,4,10,0.7539,0.8457
+SNUH-BBB,sex=F - sex=M,3-lead,sens,0.0161,0.0199,0.0245,0.014,0.0033,0.0157,3,10,0.3438,0.5566
+SNUH-BBB,sex=F - sex=M,3-lead,spec,-0.0042,0.0135,-0.008,0.0159,0.0022,0.0073,5,10,1.0,0.4316
+SNUH-BBB,sex=F - sex=M,1-lead,auroc,0.0007,0.0199,-0.0046,0.0303,0.0075,0.0184,4,10,0.7539,0.2754
+SNUH-BBB,sex=F - sex=M,1-lead,sens,0.0046,0.0222,0.0129,0.0119,-0.0031,0.0137,5,10,1.0,0.625
+SNUH-BBB,sex=F - sex=M,1-lead,spec,-0.0018,0.024,-0.0264,0.0272,0.0136,0.0267,3,10,0.3438,0.1602
+SNUH-BBB,age=>65 - age=<50,12-lead,auroc,0.0052,0.0162,0.0021,0.0043,-0.0082,0.0107,8,10,0.1094,0.0273
+SNUH-BBB,age=>65 - age=<50,12-lead,sens,-0.015,0.0421,-0.0444,0.0476,0.0217,0.0329,2,10,0.1094,0.084
+SNUH-BBB,age=>65 - age=<50,12-lead,spec,0.0196,0.0081,0.0129,0.0106,-0.0056,0.0065,8,10,0.1094,0.0371
+SNUH-BBB,age=>65 - age=<50,3-lead,auroc,0.0078,0.0091,0.0056,0.0139,0.0027,0.0109,4,10,0.7539,0.6953
+SNUH-BBB,age=>65 - age=<50,3-lead,sens,-0.0231,0.0481,-0.0129,0.0605,0.001,0.056,5,10,1.0,1.0
+SNUH-BBB,age=>65 - age=<50,3-lead,spec,0.0243,0.0182,0.0146,0.0166,-0.0069,0.0187,6,10,0.7539,0.3223
+SNUH-BBB,age=>65 - age=<50,1-lead,auroc,0.0187,0.0249,-0.017,0.0205,0.001,0.025,4,10,0.7539,0.8457
+SNUH-BBB,age=>65 - age=<50,1-lead,sens,-0.0114,0.088,-0.0609,0.0433,-0.0127,0.0486,6,10,0.7539,0.6953
+SNUH-BBB,age=>65 - age=<50,1-lead,spec,-0.0014,0.0155,-0.0133,0.0117,0.0021,0.0072,4,10,0.7539,0.4316
+## table3_trend
+cohort,comparison,threshold,metric,mean,sd,n_neg,n,sign_p,wilcoxon_p
+EchoNext-QRS,3-lead minus 12-lead (delta),overall_at_0.5,auroc,-0.0162,0.051,6,10,0.7539,0.4922
+EchoNext-QRS,3-lead minus 12-lead (delta),overall_at_0.5,sens,-0.0612,0.2449,7,10,0.3438,0.2754
+EchoNext-QRS,3-lead minus 12-lead (delta),overall_at_youden,sens,-0.0198,0.0611,4,10,0.7539,0.9844
+EchoNext-QRS,1-lead minus 12-lead (delta),overall_at_0.5,auroc,-0.083,0.0855,9,10,0.0215,0.0039
+EchoNext-QRS,1-lead minus 12-lead (delta),overall_at_0.5,sens,-0.1078,0.2309,9,10,0.0215,0.0371
+EchoNext-QRS,1-lead minus 12-lead (delta),overall_at_youden,sens,-0.0757,0.1074,8,10,0.1094,0.0488
+EchoNext-LVEF,3-lead minus 12-lead (delta),overall_at_0.5,auroc,-0.016,0.0454,6,10,0.7539,0.3223
+EchoNext-LVEF,3-lead minus 12-lead (delta),overall_at_0.5,sens,-0.005,0.1013,7,10,0.3438,0.6953
+EchoNext-LVEF,3-lead minus 12-lead (delta),overall_at_youden,sens,-0.0789,0.1563,6,10,0.7539,0.1934
+EchoNext-LVEF,1-lead minus 12-lead (delta),overall_at_0.5,auroc,-0.0392,0.0374,9,10,0.0215,0.0273
+EchoNext-LVEF,1-lead minus 12-lead (delta),overall_at_0.5,sens,0.0046,0.0983,4,10,0.7539,0.5566
+EchoNext-LVEF,1-lead minus 12-lead (delta),overall_at_youden,sens,-0.0993,0.1457,7,10,0.3438,0.1055
+SNUH-BBB,3-lead minus 12-lead (delta),overall_at_0.5,auroc,-0.03,0.0384,9,10,0.0215,0.0273
+SNUH-BBB,3-lead minus 12-lead (delta),overall_at_0.5,sens,-0.0945,0.2495,6,10,0.7539,0.3223
+SNUH-BBB,3-lead minus 12-lead (delta),overall_at_youden,sens,-0.0184,0.0514,8,10,0.1094,0.2754
+SNUH-BBB,1-lead minus 12-lead (delta),overall_at_0.5,auroc,-0.115,0.0886,9,10,0.0215,0.0039
+SNUH-BBB,1-lead minus 12-lead (delta),overall_at_0.5,sens,-0.1305,0.24,6,10,0.7539,0.1602
+SNUH-BBB,1-lead minus 12-lead (delta),overall_at_youden,sens,-0.0595,0.1203,7,10,0.3438,0.1602

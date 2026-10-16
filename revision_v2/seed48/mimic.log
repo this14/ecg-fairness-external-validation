@@ -1,0 +1,123 @@
+==============================================================================
+MIMIC-IV-ECG -- alignment check and reproduction
+==============================================================================
+    X (27144, 5000, 12) | y (27144,) | groups (27144,)
+    [OK] X/y/groups aligned at 27144 records
+    test N=5429  positives=374 (6.89%)
+    subgroup N: Asian=925, Black=1018, Hispanic/Latino=1431, White=992, Other=1063
+
+  Standard (12-lead)
+    [ckpt] model_vanilla_12lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  43 batches of 128
+      batch 1/43  (128/5429)  경과 0.0분  남은 0.2분
+      batch 21/43  (2688/5429)  경과 0.0분  남은 0.0분
+      batch 41/43  (5248/5429)  경과 0.1분  남은 0.0분
+      batch 43/43  (5429/5429)  경과 0.1분  남은 0.0분
+    overall @0.5                     N=  5429 pos=  374 ( 6.9%)  AUROC=0.9693 [0.9622-0.9769]  Sens=0.7166  Spec=0.9909
+      race=Asian                     N=   925 pos=   65 ( 7.0%)  AUROC=0.9857 [0.9614-0.9982]  Sens=0.8615  Spec=0.9907
+      race=Black                     N=  1018 pos=   62 ( 6.1%)  AUROC=0.7520 [0.7082-0.7940]  Sens=0.2742  Spec=0.9979
+      race=Hispanic/Latino           N=  1431 pos=   77 ( 5.4%)  AUROC=0.9891 [0.9809-0.9956]  Sens=0.8052  Spec=0.9926
+      race=Other                     N=  1063 pos=   63 ( 5.9%)  AUROC=0.9922 [0.9871-0.9962]  Sens=0.7778  Spec=0.9880
+      race=White                     N=   992 pos=  107 (10.8%)  AUROC=0.9832 [0.9744-0.9912]  Sens=0.7850  Spec=0.9842
+                 Asian vs White: p=0.8248
+                 Black vs White: p=0.0000
+       Hispanic/Latino vs White: p=0.3237
+                 Other vs White: p=0.0776
+    [repro] published AUROC=0.9849 Sens=0.7861 -> MISMATCH (dAUROC=0.0156, dSens=0.0695)
+
+  Reweighted (12-lead)
+    [ckpt] model_debiased_12lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  43 batches of 128
+      batch 1/43  (128/5429)  경과 0.0분  남은 0.1분
+      batch 21/43  (2688/5429)  경과 0.0분  남은 0.0분
+      batch 41/43  (5248/5429)  경과 0.1분  남은 0.0분
+      batch 43/43  (5429/5429)  경과 0.1분  남은 0.0분
+    overall @0.5                     N=  5429 pos=  374 ( 6.9%)  AUROC=0.9587 [0.9490-0.9687]  Sens=0.5963  Spec=0.9956
+      race=Asian                     N=   925 pos=   65 ( 7.0%)  AUROC=0.9666 [0.9319-0.9893]  Sens=0.7077  Spec=0.9977
+      race=Black                     N=  1018 pos=   62 ( 6.1%)  AUROC=0.7428 [0.6976-0.7848]  Sens=0.1935  Spec=1.0000
+      race=Hispanic/Latino           N=  1431 pos=   77 ( 5.4%)  AUROC=0.9745 [0.9524-0.9924]  Sens=0.6753  Spec=0.9948
+      race=Other                     N=  1063 pos=   63 ( 5.9%)  AUROC=0.9872 [0.9769-0.9951]  Sens=0.6349  Spec=0.9960
+      race=White                     N=   992 pos=  107 (10.8%)  AUROC=0.9768 [0.9672-0.9865]  Sens=0.6822  Spec=0.9898
+                 Asian vs White: p=0.5091
+                 Black vs White: p=0.0000
+       Hispanic/Latino vs White: p=0.8492
+                 Other vs White: p=0.1338
+    [repro] published AUROC=0.9757 Sens=0.9064 -> MISMATCH (dAUROC=0.0170, dSens=0.3101)
+
+  Standard (3-lead)
+    [ckpt] model_vanilla_3lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  43 batches of 128
+      batch 1/43  (128/5429)  경과 0.0분  남은 0.1분
+      batch 21/43  (2688/5429)  경과 0.0분  남은 0.0분
+      batch 41/43  (5248/5429)  경과 0.1분  남은 0.0분
+      batch 43/43  (5429/5429)  경과 0.1분  남은 0.0분
+    overall @0.5                     N=  5429 pos=  374 ( 6.9%)  AUROC=0.9435 [0.9300-0.9556]  Sens=0.7005  Spec=0.9913
+      race=Asian                     N=   925 pos=   65 ( 7.0%)  AUROC=0.9415 [0.8924-0.9779]  Sens=0.8154  Spec=0.9965
+      race=Black                     N=  1018 pos=   62 ( 6.1%)  AUROC=0.7421 [0.6918-0.7883]  Sens=0.2742  Spec=0.9990
+      race=Hispanic/Latino           N=  1431 pos=   77 ( 5.4%)  AUROC=0.9813 [0.9699-0.9908]  Sens=0.7662  Spec=0.9904
+      race=Other                     N=  1063 pos=   63 ( 5.9%)  AUROC=0.9735 [0.9422-0.9925]  Sens=0.7937  Spec=0.9880
+      race=White                     N=   992 pos=  107 (10.8%)  AUROC=0.9625 [0.9466-0.9793]  Sens=0.7757  Spec=0.9831
+                 Asian vs White: p=0.3779
+                 Black vs White: p=0.0000
+       Hispanic/Latino vs White: p=0.0788
+                 Other vs White: p=0.4778
+    [repro] published AUROC=0.9645 Sens=0.7005 -> MISMATCH (dAUROC=0.0210, dSens=0.0000)
+
+  Reweighted (3-lead)
+    [ckpt] model_debiased_3lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  43 batches of 128
+      batch 1/43  (128/5429)  경과 0.0분  남은 0.1분
+      batch 21/43  (2688/5429)  경과 0.0분  남은 0.0분
+      batch 41/43  (5248/5429)  경과 0.1분  남은 0.0분
+      batch 43/43  (5429/5429)  경과 0.1분  남은 0.0분
+    overall @0.5                     N=  5429 pos=  374 ( 6.9%)  AUROC=0.9358 [0.9192-0.9506]  Sens=0.7219  Spec=0.9737
+      race=Asian                     N=   925 pos=   65 ( 7.0%)  AUROC=0.9073 [0.8348-0.9582]  Sens=0.8154  Spec=0.9826
+      race=Black                     N=  1018 pos=   62 ( 6.1%)  AUROC=0.7607 [0.7077-0.8044]  Sens=0.2903  Spec=0.9948
+      race=Hispanic/Latino           N=  1431 pos=   77 ( 5.4%)  AUROC=0.9698 [0.9402-0.9881]  Sens=0.8312  Spec=0.9793
+      race=Other                     N=  1063 pos=   63 ( 5.9%)  AUROC=0.9657 [0.9403-0.9842]  Sens=0.7778  Spec=0.9640
+      race=White                     N=   992 pos=  107 (10.8%)  AUROC=0.9471 [0.9247-0.9672]  Sens=0.8037  Spec=0.9446
+                 Asian vs White: p=0.2038
+                 Black vs White: p=0.0000
+       Hispanic/Latino vs White: p=0.1740
+                 Other vs White: p=0.2262
+    [repro] published AUROC=0.9583 Sens=0.6765 -> MISMATCH (dAUROC=0.0225, dSens=0.0454)
+
+  Standard (1-lead)
+    [ckpt] model_vanilla_1lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  43 batches of 128
+      batch 1/43  (128/5429)  경과 0.0분  남은 0.1분
+      batch 21/43  (2688/5429)  경과 0.0분  남은 0.0분
+      batch 41/43  (5248/5429)  경과 0.1분  남은 0.0분
+      batch 43/43  (5429/5429)  경과 0.1분  남은 0.0분
+    overall @0.5                     N=  5429 pos=  374 ( 6.9%)  AUROC=0.9186 [0.9007-0.9338]  Sens=0.4385  Spec=0.9907
+      race=Asian                     N=   925 pos=   65 ( 7.0%)  AUROC=0.9134 [0.8585-0.9526]  Sens=0.4615  Spec=0.9965
+      race=Black                     N=  1018 pos=   62 ( 6.1%)  AUROC=0.7300 [0.6768-0.7762]  Sens=0.1452  Spec=0.9979
+      race=Hispanic/Latino           N=  1431 pos=   77 ( 5.4%)  AUROC=0.9740 [0.9588-0.9869]  Sens=0.5844  Spec=0.9911
+      race=Other                     N=  1063 pos=   63 ( 5.9%)  AUROC=0.9381 [0.8984-0.9713]  Sens=0.5238  Spec=0.9850
+      race=White                     N=   992 pos=  107 (10.8%)  AUROC=0.9175 [0.8858-0.9445]  Sens=0.4393  Spec=0.9831
+                 Asian vs White: p=0.8896
+                 Black vs White: p=0.0000
+       Hispanic/Latino vs White: p=0.0006
+                 Other vs White: p=0.4061
+    [repro] published AUROC=0.9188 Sens=0.4385 -> MATCH (dAUROC=0.0002, dSens=0.0000)
+
+  Reweighted (1-lead)
+    [ckpt] model_debiased_1lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  43 batches of 128
+      batch 1/43  (128/5429)  경과 0.0분  남은 0.1분
+      batch 21/43  (2688/5429)  경과 0.0분  남은 0.0분
+      batch 41/43  (5248/5429)  경과 0.1분  남은 0.0분
+      batch 43/43  (5429/5429)  경과 0.1분  남은 0.0분
+    overall @0.5                     N=  5429 pos=  374 ( 6.9%)  AUROC=0.8245 [0.8004-0.8500]  Sens=0.2647  Spec=0.9784
+      race=Asian                     N=   925 pos=   65 ( 7.0%)  AUROC=0.8195 [0.7431-0.8792]  Sens=0.1846  Spec=0.9872
+      race=Black                     N=  1018 pos=   62 ( 6.1%)  AUROC=0.6217 [0.5590-0.6767]  Sens=0.1452  Spec=0.9906
+      race=Hispanic/Latino           N=  1431 pos=   77 ( 5.4%)  AUROC=0.9218 [0.8884-0.9496]  Sens=0.3636  Spec=0.9830
+      race=Other                     N=  1063 pos=   63 ( 5.9%)  AUROC=0.8990 [0.8638-0.9300]  Sens=0.2063  Spec=0.9740
+      race=White                     N=   992 pos=  107 (10.8%)  AUROC=0.8347 [0.7943-0.8748]  Sens=0.3458  Spec=0.9548
+                 Asian vs White: p=0.6903
+                 Black vs White: p=0.0000
+       Hispanic/Latino vs White: p=0.0006
+                 Other vs White: p=0.0202
+    [repro] published AUROC=0.9321 Sens=0.5909 -> MISMATCH (dAUROC=0.1076, dSens=0.3262)
+
+[written] /home/this14/ev_out/seed48/mimic_reproduction.json

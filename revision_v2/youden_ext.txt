@@ -1,0 +1,334 @@
+val N 2715 pos 166
+SNUH n 48164 prev 0.13609750020762396
+echo splits ['train' 'val' 'test' 'no_split']
+{'EchoNext-QRS': (4626, 567), 'EchoNext-LVEF': (4626, 866)}
+    [ckpt] model_vanilla_12lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.1분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_12lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_vanilla_3lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_3lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_vanilla_1lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_1lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+seed 42 done
+    [ckpt] model_vanilla_12lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_12lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_vanilla_3lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_3lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_vanilla_1lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_1lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+seed 43 done
+    [ckpt] model_vanilla_12lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_12lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_vanilla_3lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_3lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_vanilla_1lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_1lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+seed 44 done
+    [ckpt] model_vanilla_12lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_12lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_vanilla_3lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_3lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_vanilla_1lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_1lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+seed 45 done
+    [ckpt] model_vanilla_12lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_12lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_vanilla_3lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_3lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_vanilla_1lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_1lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+seed 46 done
+    [ckpt] model_vanilla_12lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_12lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_vanilla_3lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_3lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_vanilla_1lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_1lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+seed 47 done
+    [ckpt] model_vanilla_12lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_12lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_vanilla_3lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_3lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_vanilla_1lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_1lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+seed 48 done
+    [ckpt] model_vanilla_12lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_12lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_vanilla_3lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_3lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_vanilla_1lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_1lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+seed 49 done
+    [ckpt] model_vanilla_12lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_12lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_vanilla_3lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_3lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_vanilla_1lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_1lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+seed 50 done
+    [ckpt] model_vanilla_12lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_12lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_vanilla_3lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_3lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_vanilla_1lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+    [ckpt] model_debiased_1lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  22 batches of 128
+      batch 1/22  (128/2715)  경과 0.0분  남은 0.0분
+      batch 21/22  (2688/2715)  경과 0.0분  남은 0.0분
+      batch 22/22  (2715/2715)  경과 0.0분  남은 0.0분
+seed 51 done
+CHECK SNUH auroc json vs mine 0.8741375665752065 0.8741375665752065
+cohort,cfg,metric,std_mean,rw_mean,delta_mean,delta_sd,n_neg,n,sign_p,wilcoxon_p,mean_thr_std,mean_thr_rw
+EchoNext-QRS,12-lead,sens,0.8233,0.8464,0.0231,0.0633,3,10,0.3438,0.1934,0.071,0.036
+EchoNext-QRS,12-lead,spec,0.9250,0.8838,-0.0412,0.0380,9,10,0.0215,0.0098,0.071,0.036
+EchoNext-QRS,3-lead,sens,0.9131,0.8721,-0.0409,0.0595,8,10,0.1094,0.0840,0.060,0.055
+EchoNext-QRS,3-lead,spec,0.8672,0.8721,0.0049,0.0761,4,10,0.7539,0.7695,0.060,0.055
+EchoNext-QRS,1-lead,sens,0.8388,0.7709,-0.0679,0.1499,6,10,0.7539,0.2324,0.083,0.056
+EchoNext-QRS,1-lead,spec,0.8592,0.7382,-0.1209,0.0621,10,10,0.0020,0.0020,0.083,0.056
+EchoNext-LVEF,12-lead,sens,0.3048,0.3712,0.0664,0.0642,2,10,0.1094,0.0215,0.071,0.036
+EchoNext-LVEF,12-lead,spec,0.8651,0.8324,-0.0326,0.0343,9,10,0.0215,0.0195,0.071,0.036
+EchoNext-LVEF,3-lead,sens,0.4339,0.4119,-0.0221,0.0734,5,10,1.0000,0.4258,0.060,0.055
+EchoNext-LVEF,3-lead,spec,0.8189,0.8253,0.0064,0.0653,4,10,0.7539,0.6953,0.060,0.055
+EchoNext-LVEF,1-lead,sens,0.4179,0.4941,0.0762,0.1008,3,10,0.3438,0.0488,0.083,0.056
+EchoNext-LVEF,1-lead,spec,0.8177,0.7150,-0.1027,0.0566,10,10,0.0020,0.0020,0.083,0.056
+SNUH-BBB,12-lead,sens,0.9105,0.8858,-0.0247,0.0674,6,10,0.7539,0.4922,0.071,0.036
+SNUH-BBB,12-lead,spec,0.7648,0.7601,-0.0047,0.0905,6,10,0.7539,0.7695,0.071,0.036
+SNUH-BBB,3-lead,sens,0.9439,0.8730,-0.0709,0.0666,9,10,0.0215,0.0273,0.060,0.055
+SNUH-BBB,3-lead,spec,0.6520,0.7022,0.0502,0.1052,5,10,1.0000,0.3223,0.060,0.055
+SNUH-BBB,1-lead,sens,0.7689,0.6546,-0.1143,0.2600,7,10,0.3438,0.1602,0.083,0.056
+SNUH-BBB,1-lead,spec,0.7037,0.6150,-0.0887,0.1180,7,10,0.3438,0.0371,0.083,0.056

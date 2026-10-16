@@ -1,0 +1,131 @@
+==============================================================================
+EchoNext -- cross-task validation (BBB model vs echo label)
+==============================================================================
+    waveforms (4626, 1, 2500, 12) float64 | metadata split='val' rows=4626
+    dropped 0 rows with missing lvef_lte_45_flag
+    usable N=4626  positives=866 (18.72%)
+    [mimic] scale reference loaded from mimic_scale.npz: mean +0.0000..+0.0000, std 0.9990..1.0000
+    [cohort] scale stats from 1024 records: mean -0.02..+0.02, std 0.91..0.96
+
+  Standard (12-lead)
+    [ckpt] model_vanilla_12lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  37 batches of 128
+      batch 1/37  (128/4626)  경과 0.0분  남은 0.2분
+      batch 21/37  (2688/4626)  경과 0.1분  남은 0.0분
+      batch 37/37  (4626/4626)  경과 0.1분  남은 0.0분
+    overall @0.5                     N=  4626 pos=  866 (18.7%)  AUROC=0.6566 [0.6369-0.6785]  Sens=0.1594  Spec=0.9263
+    overall @J=0.0011                N=  4626 pos=  866 (18.7%)  AUROC=0.6566 [0.6369-0.6785]  Sens=0.5393  Spec=0.7327
+      race_ethnicity=asian           N=   134 pos=   30 (22.4%)  AUROC=0.6433 [0.5384-0.7355]  Sens=0.1333  Spec=0.9327
+      race_ethnicity=black           N=   728 pos=  142 (19.5%)  AUROC=0.6494 [0.5910-0.7013]  Sens=0.1549  Spec=0.9471
+      race_ethnicity=hispanic        N=  1351 pos=  207 (15.3%)  AUROC=0.6471 [0.6046-0.6917]  Sens=0.1546  Spec=0.9309
+      race_ethnicity=other           N=   380 pos=   82 (21.6%)  AUROC=0.6722 [0.5974-0.7365]  Sens=0.1829  Spec=0.9329
+      race_ethnicity=unknown         N=   648 pos=  147 (22.7%)  AUROC=0.6647 [0.6226-0.7132]  Sens=0.1497  Spec=0.9242
+      race_ethnicity=white           N=  1385 pos=  258 (18.6%)  AUROC=0.6537 [0.6192-0.6923]  Sens=0.1667  Spec=0.9095
+      sex=female                     N=  2356 pos=  321 (13.6%)  AUROC=0.6648 [0.6293-0.7003]  Sens=0.1464  Spec=0.9450
+      sex=male                       N=  2270 pos=  545 (24.0%)  AUROC=0.6323 [0.6037-0.6599]  Sens=0.1670  Spec=0.9043
+      age_at_ecg=50-65               N=  1417 pos=  269 (19.0%)  AUROC=0.6399 [0.5960-0.6768]  Sens=0.1301  Spec=0.9416
+      age_at_ecg=<50                 N=  1034 pos=  124 (12.0%)  AUROC=0.6608 [0.6067-0.7103]  Sens=0.0968  Spec=0.9692
+      age_at_ecg=>65                 N=  2175 pos=  473 (21.7%)  AUROC=0.6545 [0.6298-0.6807]  Sens=0.1924  Spec=0.8931
+
+  Reweighted (12-lead)
+    [ckpt] model_debiased_12lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  37 batches of 128
+      batch 1/37  (128/4626)  경과 0.0분  남은 0.1분
+      batch 21/37  (2688/4626)  경과 0.1분  남은 0.0분
+      batch 37/37  (4626/4626)  경과 0.1분  남은 0.0분
+    overall @0.5                     N=  4626 pos=  866 (18.7%)  AUROC=0.6000 [0.5766-0.6244]  Sens=0.1663  Spec=0.9229
+    overall @J=0.0078                N=  4626 pos=  866 (18.7%)  AUROC=0.6000 [0.5766-0.6244]  Sens=0.4388  Spec=0.7824
+      race_ethnicity=asian           N=   134 pos=   30 (22.4%)  AUROC=0.5833 [0.4528-0.6964]  Sens=0.2333  Spec=0.9231
+      race_ethnicity=black           N=   728 pos=  142 (19.5%)  AUROC=0.5930 [0.5371-0.6507]  Sens=0.1479  Spec=0.9454
+      race_ethnicity=hispanic        N=  1351 pos=  207 (15.3%)  AUROC=0.5515 [0.4999-0.6007]  Sens=0.1498  Spec=0.9327
+      race_ethnicity=other           N=   380 pos=   82 (21.6%)  AUROC=0.6097 [0.5425-0.6891]  Sens=0.1341  Spec=0.9396
+      race_ethnicity=unknown         N=   648 pos=  147 (22.7%)  AUROC=0.5738 [0.5229-0.6372]  Sens=0.1293  Spec=0.9222
+      race_ethnicity=white           N=  1385 pos=  258 (18.6%)  AUROC=0.6521 [0.6143-0.6902]  Sens=0.2132  Spec=0.8971
+      sex=female                     N=  2356 pos=  321 (13.6%)  AUROC=0.5913 [0.5482-0.6296]  Sens=0.1433  Spec=0.9425
+      sex=male                       N=  2270 pos=  545 (24.0%)  AUROC=0.5993 [0.5694-0.6304]  Sens=0.1798  Spec=0.8997
+      age_at_ecg=50-65               N=  1417 pos=  269 (19.0%)  AUROC=0.5898 [0.5480-0.6331]  Sens=0.1413  Spec=0.9373
+      age_at_ecg=<50                 N=  1034 pos=  124 (12.0%)  AUROC=0.5774 [0.5130-0.6362]  Sens=0.0887  Spec=0.9571
+      age_at_ecg=>65                 N=  2175 pos=  473 (21.7%)  AUROC=0.5950 [0.5634-0.6282]  Sens=0.2008  Spec=0.8948
+
+  Standard (3-lead)
+    [ckpt] model_vanilla_3lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  37 batches of 128
+      batch 1/37  (128/4626)  경과 0.0분  남은 0.1분
+      batch 21/37  (2688/4626)  경과 0.0분  남은 0.0분
+      batch 37/37  (4626/4626)  경과 0.1분  남은 0.0분
+    overall @0.5                     N=  4626 pos=  866 (18.7%)  AUROC=0.6929 [0.6735-0.7133]  Sens=0.2055  Spec=0.9133
+    overall @J=0.0123                N=  4626 pos=  866 (18.7%)  AUROC=0.6929 [0.6735-0.7133]  Sens=0.6536  Spec=0.6782
+      race_ethnicity=asian           N=   134 pos=   30 (22.4%)  AUROC=0.6083 [0.4979-0.7157]  Sens=0.1667  Spec=0.8942
+      race_ethnicity=black           N=   728 pos=  142 (19.5%)  AUROC=0.7329 [0.6882-0.7742]  Sens=0.1831  Spec=0.9454
+      race_ethnicity=hispanic        N=  1351 pos=  207 (15.3%)  AUROC=0.6679 [0.6261-0.7093]  Sens=0.1884  Spec=0.9205
+      race_ethnicity=other           N=   380 pos=   82 (21.6%)  AUROC=0.7173 [0.6571-0.7754]  Sens=0.2195  Spec=0.9329
+      race_ethnicity=unknown         N=   648 pos=  147 (22.7%)  AUROC=0.6872 [0.6380-0.7347]  Sens=0.1973  Spec=0.9122
+      race_ethnicity=white           N=  1385 pos=  258 (18.6%)  AUROC=0.6937 [0.6592-0.7294]  Sens=0.2364  Spec=0.8864
+      sex=female                     N=  2356 pos=  321 (13.6%)  AUROC=0.7017 [0.6667-0.7330]  Sens=0.2056  Spec=0.9322
+      sex=male                       N=  2270 pos=  545 (24.0%)  AUROC=0.6788 [0.6538-0.7034]  Sens=0.2055  Spec=0.8910
+      age_at_ecg=50-65               N=  1417 pos=  269 (19.0%)  AUROC=0.6975 [0.6602-0.7338]  Sens=0.1673  Spec=0.9277
+      age_at_ecg=<50                 N=  1034 pos=  124 (12.0%)  AUROC=0.6775 [0.6246-0.7295]  Sens=0.1129  Spec=0.9703
+      age_at_ecg=>65                 N=  2175 pos=  473 (21.7%)  AUROC=0.6776 [0.6501-0.7065]  Sens=0.2516  Spec=0.8731
+
+  Reweighted (3-lead)
+    [ckpt] model_debiased_3lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  37 batches of 128
+      batch 1/37  (128/4626)  경과 0.0분  남은 0.1분
+      batch 21/37  (2688/4626)  경과 0.0분  남은 0.0분
+      batch 37/37  (4626/4626)  경과 0.1분  남은 0.0분
+    overall @0.5                     N=  4626 pos=  866 (18.7%)  AUROC=0.6722 [0.6510-0.6942]  Sens=0.1871  Spec=0.9173
+    overall @J=0.0057                N=  4626 pos=  866 (18.7%)  AUROC=0.6722 [0.6510-0.6942]  Sens=0.6224  Spec=0.6747
+      race_ethnicity=asian           N=   134 pos=   30 (22.4%)  AUROC=0.6353 [0.5119-0.7513]  Sens=0.1333  Spec=0.9038
+      race_ethnicity=black           N=   728 pos=  142 (19.5%)  AUROC=0.7142 [0.6614-0.7588]  Sens=0.2042  Spec=0.9488
+      race_ethnicity=hispanic        N=  1351 pos=  207 (15.3%)  AUROC=0.6706 [0.6237-0.7084]  Sens=0.2222  Spec=0.9205
+      race_ethnicity=other           N=   380 pos=   82 (21.6%)  AUROC=0.6187 [0.5453-0.6821]  Sens=0.1341  Spec=0.9295
+      race_ethnicity=unknown         N=   648 pos=  147 (22.7%)  AUROC=0.6459 [0.5987-0.6951]  Sens=0.1361  Spec=0.9082
+      race_ethnicity=white           N=  1385 pos=  258 (18.6%)  AUROC=0.6801 [0.6487-0.7151]  Sens=0.2016  Spec=0.8997
+      sex=female                     N=  2356 pos=  321 (13.6%)  AUROC=0.6906 [0.6609-0.7221]  Sens=0.1776  Spec=0.9366
+      sex=male                       N=  2270 pos=  545 (24.0%)  AUROC=0.6452 [0.6167-0.6730]  Sens=0.1927  Spec=0.8945
+      age_at_ecg=50-65               N=  1417 pos=  269 (19.0%)  AUROC=0.6695 [0.6324-0.7016]  Sens=0.1673  Spec=0.9225
+      age_at_ecg=<50                 N=  1034 pos=  124 (12.0%)  AUROC=0.6179 [0.5667-0.6745]  Sens=0.0968  Spec=0.9637
+      age_at_ecg=>65                 N=  2175 pos=  473 (21.7%)  AUROC=0.6756 [0.6487-0.7046]  Sens=0.2220  Spec=0.8890
+
+  Standard (1-lead)
+    [ckpt] model_vanilla_1lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  37 batches of 128
+      batch 1/37  (128/4626)  경과 0.0분  남은 0.1분
+      batch 21/37  (2688/4626)  경과 0.0분  남은 0.0분
+      batch 37/37  (4626/4626)  경과 0.1분  남은 0.0분
+    overall @0.5                     N=  4626 pos=  866 (18.7%)  AUROC=0.6342 [0.6135-0.6557]  Sens=0.1686  Spec=0.9293
+    overall @J=0.0103                N=  4626 pos=  866 (18.7%)  AUROC=0.6342 [0.6135-0.6557]  Sens=0.7148  Spec=0.4886
+      race_ethnicity=asian           N=   134 pos=   30 (22.4%)  AUROC=0.6301 [0.5252-0.7396]  Sens=0.1000  Spec=0.9423
+      race_ethnicity=black           N=   728 pos=  142 (19.5%)  AUROC=0.6280 [0.5780-0.6815]  Sens=0.1761  Spec=0.9454
+      race_ethnicity=hispanic        N=  1351 pos=  207 (15.3%)  AUROC=0.6496 [0.6109-0.6876]  Sens=0.1691  Spec=0.9309
+      race_ethnicity=other           N=   380 pos=   82 (21.6%)  AUROC=0.6350 [0.5643-0.7059]  Sens=0.1220  Spec=0.9463
+      race_ethnicity=unknown         N=   648 pos=  147 (22.7%)  AUROC=0.6305 [0.5813-0.6754]  Sens=0.1769  Spec=0.9281
+      race_ethnicity=white           N=  1385 pos=  258 (18.6%)  AUROC=0.6287 [0.5984-0.6650]  Sens=0.1822  Spec=0.9139
+      sex=female                     N=  2356 pos=  321 (13.6%)  AUROC=0.6427 [0.6110-0.6782]  Sens=0.1807  Spec=0.9410
+      sex=male                       N=  2270 pos=  545 (24.0%)  AUROC=0.6134 [0.5861-0.6403]  Sens=0.1615  Spec=0.9154
+      age_at_ecg=50-65               N=  1417 pos=  269 (19.0%)  AUROC=0.6351 [0.5945-0.6707]  Sens=0.1375  Spec=0.9469
+      age_at_ecg=<50                 N=  1034 pos=  124 (12.0%)  AUROC=0.6088 [0.5539-0.6600]  Sens=0.0645  Spec=0.9549
+      age_at_ecg=>65                 N=  2175 pos=  473 (21.7%)  AUROC=0.6356 [0.6055-0.6639]  Sens=0.2135  Spec=0.9036
+
+  Reweighted (1-lead)
+    [ckpt] model_debiased_1lead.pt: strict load OK, 218 tensors
+    [device] cuda  |  37 batches of 128
+      batch 1/37  (128/4626)  경과 0.0분  남은 0.1분
+      batch 21/37  (2688/4626)  경과 0.0분  남은 0.0분
+      batch 37/37  (4626/4626)  경과 0.1분  남은 0.0분
+    overall @0.5                     N=  4626 pos=  866 (18.7%)  AUROC=0.6202 [0.5999-0.6415]  Sens=0.2044  Spec=0.8875
+    overall @J=0.0677                N=  4626 pos=  866 (18.7%)  AUROC=0.6202 [0.5999-0.6415]  Sens=0.6305  Spec=0.5689
+      race_ethnicity=asian           N=   134 pos=   30 (22.4%)  AUROC=0.5718 [0.4604-0.7033]  Sens=0.1333  Spec=0.9423
+      race_ethnicity=black           N=   728 pos=  142 (19.5%)  AUROC=0.5760 [0.5229-0.6256]  Sens=0.2042  Spec=0.8584
+      race_ethnicity=hispanic        N=  1351 pos=  207 (15.3%)  AUROC=0.6343 [0.5918-0.6766]  Sens=0.2464  Spec=0.8890
+      race_ethnicity=other           N=   380 pos=   82 (21.6%)  AUROC=0.6314 [0.5631-0.6938]  Sens=0.1463  Spec=0.8993
+      race_ethnicity=unknown         N=   648 pos=  147 (22.7%)  AUROC=0.6325 [0.5797-0.6857]  Sens=0.1905  Spec=0.8762
+      race_ethnicity=white           N=  1385 pos=  258 (18.6%)  AUROC=0.6304 [0.5943-0.6676]  Sens=0.2054  Spec=0.8980
+      sex=female                     N=  2356 pos=  321 (13.6%)  AUROC=0.6556 [0.6262-0.6826]  Sens=0.2118  Spec=0.8924
+      sex=male                       N=  2270 pos=  545 (24.0%)  AUROC=0.5840 [0.5585-0.6111]  Sens=0.2000  Spec=0.8817
+      age_at_ecg=50-65               N=  1417 pos=  269 (19.0%)  AUROC=0.6406 [0.6012-0.6794]  Sens=0.2082  Spec=0.9094
+      age_at_ecg=<50                 N=  1034 pos=  124 (12.0%)  AUROC=0.5534 [0.4924-0.6133]  Sens=0.1532  Spec=0.8626
+      age_at_ecg=>65                 N=  2175 pos=  473 (21.7%)  AUROC=0.6213 [0.5927-0.6470]  Sens=0.2156  Spec=0.8860
+
+[written] /home/this14/ev_out/seed44/echonext_results_lvef_lte_45_flag.json
+[written] /home/this14/ev_out/seed44/echonext_probs.npz  (0.12 MB)
